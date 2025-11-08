@@ -1,0 +1,12 @@
+<div class="dashboard">
+  <h2>Welcome, {{ userEmail }} 👋</h2>
+
+  <div class="actions">
+    <!-- <app-button buttonClass="default-btn" routerLink="/list">
+      Go to List
+    </app-button> -->
+    <app-button buttonClass="default-btn" (btnClick)="gotoItemsPage()">
+      Go to List
+    </app-button>
+  </div>
+</div>

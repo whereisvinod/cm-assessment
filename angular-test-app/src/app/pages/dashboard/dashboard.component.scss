@@ -1,0 +1,15 @@
+.dashboard {
+  text-align: center;
+  margin-top: 80px;
+
+  h2 {
+    margin-bottom: 24px;
+  }
+
+  .actions {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    cursor: pointer;
+  }
+}

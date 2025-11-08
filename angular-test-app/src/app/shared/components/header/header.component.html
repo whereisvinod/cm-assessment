@@ -1,0 +1,12 @@
+<header class="app-header">
+  <div class="left">
+    <h2 class="logo">Angular App</h2>
+  </div>
+
+  <div class="right">
+    <span *ngIf="userEmail">{{ userEmail }}</span>
+    <app-button buttonClass="default-btn primary-btn" (btnClick)="logout()">
+      Logout
+    </app-button>
+  </div>
+</header>

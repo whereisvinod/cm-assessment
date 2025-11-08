@@ -1,0 +1,25 @@
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #1976d2;
+  color: white;
+
+  .left .logo {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    button {
+      background: white;
+      color: #1976d2;
+      border-radius: 4px;
+    }
+  }
+}
