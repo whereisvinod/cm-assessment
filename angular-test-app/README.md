@@ -1,59 +1,82 @@
-# AngularTestApp
+# CM Assessment - Angular Interview Task
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.19.
+## Overview
 
-## Development server
+This is a simple Angular application demonstrating:
 
-To start a local development server, run:
+- User authentication via cookies.
+- Protected routes for dashboard and list pages.
+- State management using Angular Component Store or Signal Store.
+- API integration for login and list of items.
+- Modular and reusable components.
+- Lazy-loaded modules for optimized routing.
+
+---
+
+## Features
+
+### 1. Login Page
+- Form with **email** and **password** fields.
+- Authenticate the user using the mock API (`POST /api/login`).
+- Store authentication token in **cookies**.
+- Redirect to dashboard after successful login.
+
+### 2. Authentication Handling
+- Uses cookies for auth (`ngx-cookie-service`).
+- Dashboard and list pages are **protected routes**.
+- Logout clears cookies and redirects to login.
+
+### 3. Dashboard Page
+- Displays a welcome message with the logged-in user's email.
+- Navigation link to the **List** page.
+- Logout button.
+
+### 4. List Page
+- Fetches and displays items from the mock API (`GET /api/items`).
+- Loading and error states implemented.
+- State managed via **Component Store** or **Signal Store**.
+- Lazy-loaded for performance.
+
+---
+
+## Tech Stack
+
+- Angular (v19)
+- Angular Material (UI components)
+- RxJS for API handling
+- ngx-cookie-service for cookie-based authentication
+- Jasmine/Karma for unit testing
+
+---
+
+## Setup Instructions
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/whereisvinod/cm-assessment.git
+cd cm-assessment
+```
+
+### 2. Install the dependencies
+
+```bash
+npm install
+```
+
+### 3. Run the application
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+### 4. Run unit tests
 
 ```bash
 ng test
 ```
 
-## Running end-to-end tests
+## Login (Mock data)
 
-For end-to-end (e2e) testing, run:
+- test@example.com / 123456
 
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
