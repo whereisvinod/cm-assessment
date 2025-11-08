@@ -6,7 +6,6 @@ This is a simple Angular application demonstrating:
 
 - User authentication via cookies.
 - Protected routes for dashboard and list pages.
-- State management using Angular Component Store or Signal Store.
 - API integration for login and list of items.
 - Modular and reusable components.
 - Lazy-loaded modules for optimized routing.
@@ -34,8 +33,6 @@ This is a simple Angular application demonstrating:
 ### 4. List Page
 - Fetches and displays items from the mock API (`GET /api/items`).
 - Loading and error states implemented.
-- State managed via **Component Store** or **Signal Store**.
-- Lazy-loaded for performance.
 
 ---
 
