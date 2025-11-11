@@ -36,8 +36,8 @@ export class AuthService {
   }
 
   logout() {
-    this.cookies.delete('token');
-    this.cookies.delete('email');
+    this.cookies.delete('authToken');
+    this.cookies.delete('userEmail');
     this.router.navigate(['/login']);
   }
 
